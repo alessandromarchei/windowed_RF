@@ -1,0 +1,30 @@
+##############################################################
+#SCRIPT FOR SPEEDING UP and RECORDING the ADDER SYNTHESIS#
+# analyzing and checking vhdl netlist#
+# here the analyze command is used for each file from bottom to top #
+##############################################################
+analyze -library WORK -format vhdl {RF_WINDOWED.vhd}
+# fill these lines with your files ...
+##############################################################
+# elaborating the top entity -- here supposed P4ADD#
+# choose the architecture you want
+elaborate RF_WINDOWED -architecture BEHAVIORAL -library WORK -parameters "NBIT=32,M=8,N=2,F=4"
+##########################################
+# first compilation, without constraints #
+compile -exact_map
+# reporting riming and power after the first synthesis without constraints #
+report_timing > RF_w_1t.rpt
+report_area > RF_w_1a.rpt
+# insert clock
+create_clock -name "CLK" -period 2 CLK
+report_clock > RF_w_clk.rpt
+compile
+
+report_timing > RF_w_2t.rpt
+report_area > RF_w_2a.rpt
+
+# save report
+# saving files
+write -hierarchy -format ddc -output RF_w-behavioral.ddc
+write -hierarchy -format vhdl -output RF_w-behavioral.vhdl
+write -hierarchy -format verilog -output RF_w-behavioral.v

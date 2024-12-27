@@ -1,0 +1,165 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/alessandro/Politecnico Di Torino Studenti Dropbox/Alessandro Marchei/GITHUB_proj/windowed_RF/sim
+Ccfg_rf_wind_beh
+eRF_WINDOWED
+aBEHAVIORAL
+DAx4 work 11 rf_windowed 10 behavioral 22 [aR3FQ`T?kW8BBd`6ZFmj2
+Z1 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z6 DEx4 work 11 rf_windowed 0 22 Rlk>;bclT0kHIM>a08CJ=1
+!i122 0
+Z7 w1683214400
+R0
+Z8 8../src/RF_WINDOWED.vhd
+Z9 F../src/RF_WINDOWED.vhd
+l0
+L166 1
+V_9Qjfh[YR5EQUG^62z4T?0
+!s100 TcJ0A8jG`?k@n?1`ZgUWD1
+Z10 OV;C;2020.1;71
+32
+Z11 !s110 1735333057
+!i10b 0
+Z12 !s108 1735333057.000000
+Z13 !s90 -reportprogress|300|-work|work|../src/RF_WINDOWED.vhd|
+Z14 !s107 ../src/RF_WINDOWED.vhd|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Ccfg_rf_windowed_test
+etb
+aTESTA
+R6
+DCx4 work 15 cfg_rf_wind_beh 0 22 _9Qjfh[YR5EQUG^62z4T?0
+DAx4 work 2 tb 5 testa 22 Q[fJ4V=U4T7V<F`RYZWVb3
+R1
+R2
+R3
+R4
+R5
+Z17 DEx4 work 2 tb 0 22 LR5V_HVKkX8_gBUHaV`V=0
+!i122 1
+Z18 w1735332709
+R0
+Z19 8../tb/tb.vhd
+Z20 F../tb/tb.vhd
+l0
+L84 1
+VA4G7LlD7FJYmL48eX6zoT3
+!s100 ?BW5jfLR>OVPT19_C0lA;3
+R10
+32
+R11
+!i10b 0
+R12
+Z21 !s90 -reportprogress|300|-work|work|../tb/tb.vhd|
+!s107 ../tb/tb.vhd|
+!i113 1
+R15
+R16
+Erf_windowed
+R7
+R1
+R2
+R3
+R4
+R5
+!i122 0
+R0
+R8
+R9
+l0
+L10 1
+VRlk>;bclT0kHIM>a08CJ=1
+!s100 n3BRZ_<oh:@^_H7mI]NK82
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Abehavioral
+R1
+R2
+R3
+R4
+R5
+R6
+!i122 0
+l42
+L34 131
+V[aR3FQ`T?kW8BBd`6ZFmj2
+!s100 4lO6@B@^c]Nf9dT=:d01j2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Etb
+R18
+R1
+R2
+R3
+R4
+R5
+!i122 1
+R0
+R19
+R20
+l0
+L8 1
+VLR5V_HVKkX8_gBUHaV`V=0
+!s100 5ZhHkQR@31mmkB]a2lm7]2
+R10
+32
+R11
+!i10b 1
+R12
+R21
+Z22 !s107 ../tb/tb.vhd|
+!i113 1
+R15
+R16
+Atesta
+R1
+R2
+R3
+R4
+R5
+R17
+!i122 1
+l53
+L11 71
+VQ[fJ4V=U4T7V<F`RYZWVb3
+!s100 XEdWgjcT:BEbloz_e]>Vb3
+R10
+32
+R11
+!i10b 1
+R12
+R21
+R22
+!i113 1
+R15
+R16

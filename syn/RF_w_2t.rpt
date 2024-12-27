@@ -1,0 +1,105 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RF_WINDOWED_NBIT32_M8_N2_F4' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RF_WINDOWED_NBIT32_M8_N2_F4
+Version: S-2021.06-SP4
+Date   : Thu May  4 13:29:40 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: cwp_v_reg[26]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: swp_v_reg[11]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RF_WINDOWED_NBIT32_M8_N2_F4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  cwp_v_reg[26]/CK (DFF_X1)                               0.00 #     0.00 r
+  cwp_v_reg[26]/QN (DFF_X1)                               0.07       0.07 r
+  U9372/ZN (AND4_X1)                                      0.06       0.13 r
+  U6972/ZN (AND2_X1)                                      0.04       0.17 r
+  U6971/ZN (AND2_X1)                                      0.04       0.20 r
+  U6926/ZN (AND4_X1)                                      0.07       0.27 r
+  U6967/ZN (NAND2_X1)                                     0.03       0.30 f
+  U6977/ZN (AND3_X1)                                      0.04       0.34 f
+  r353/INC_DEC (RF_WINDOWED_NBIT32_M8_N2_F4_DW01_incdec_4)
+                                                          0.00       0.34 f
+  r353/U192/ZN (INV_X1)                                   0.03       0.37 r
+  r353/U16/Z (BUF_X2)                                     0.05       0.42 r
+  r353/U17/ZN (INV_X1)                                    0.03       0.45 f
+  r353/U46/ZN (AND2_X1)                                   0.04       0.49 f
+  r353/U196/ZN (NOR2_X1)                                  0.04       0.53 r
+  r353/U2/ZN (AND2_X2)                                    0.07       0.60 r
+  r353/U219/ZN (OAI21_X1)                                 0.04       0.64 f
+  r353/U195/ZN (AOI21_X1)                                 0.05       0.68 r
+  r353/U215/ZN (XNOR2_X1)                                 0.06       0.75 r
+  r353/SUM[9] (RF_WINDOWED_NBIT32_M8_N2_F4_DW01_incdec_4)
+                                                          0.00       0.75 r
+  U9515/ZN (NAND2_X1)                                     0.04       0.79 f
+  U9671/ZN (INV_X1)                                       0.03       0.82 r
+  eq_104/B[9] (RF_WINDOWED_NBIT32_M8_N2_F4_DW01_cmp6_1)
+                                                          0.00       0.82 r
+  eq_104/U37/ZN (XNOR2_X1)                                0.05       0.87 r
+  eq_104/U49/ZN (NAND3_X1)                                0.03       0.91 f
+  eq_104/U42/ZN (NOR2_X1)                                 0.04       0.95 r
+  eq_104/U41/ZN (NAND4_X1)                                0.04       0.99 f
+  eq_104/U40/ZN (NOR2_X1)                                 0.04       1.04 r
+  eq_104/U39/ZN (NAND4_X1)                                0.04       1.07 f
+  eq_104/U38/ZN (NOR2_X1)                                 0.04       1.11 r
+  eq_104/U43/ZN (NAND4_X1)                                0.04       1.15 f
+  eq_104/U4/ZN (NOR2_X1)                                  0.04       1.19 r
+  eq_104/EQ (RF_WINDOWED_NBIT32_M8_N2_F4_DW01_cmp6_1)     0.00       1.19 r
+  U7933/ZN (AND4_X2)                                      0.07       1.26 r
+  r347/INC_DEC (RF_WINDOWED_NBIT32_M8_N2_F4_DW01_incdec_3)
+                                                          0.00       1.26 r
+  r347/U256/ZN (INV_X1)                                   0.04       1.30 f
+  r347/U4/Z (BUF_X2)                                      0.05       1.36 f
+  r347/U111/Z (BUF_X2)                                    0.06       1.42 f
+  r347/U110/ZN (INV_X1)                                   0.07       1.49 r
+  r347/U246/ZN (NAND2_X1)                                 0.05       1.53 f
+  r347/U331/ZN (INV_X1)                                   0.03       1.57 r
+  r347/U269/ZN (NOR2_X1)                                  0.02       1.59 f
+  r347/U14/ZN (NAND2_X1)                                  0.04       1.64 r
+  r347/U330/ZN (INV_X1)                                   0.04       1.67 f
+  r347/U266/ZN (OAI21_X1)                                 0.05       1.72 r
+  r347/U221/ZN (AOI21_X1)                                 0.04       1.76 f
+  r347/U326/ZN (OAI21_X1)                                 0.05       1.80 r
+  r347/U325/ZN (XNOR2_X1)                                 0.06       1.87 r
+  r347/SUM[11] (RF_WINDOWED_NBIT32_M8_N2_F4_DW01_incdec_3)
+                                                          0.00       1.87 r
+  U9622/ZN (INV_X1)                                       0.02       1.89 f
+  U9623/ZN (OAI222_X1)                                    0.05       1.94 r
+  swp_v_reg[11]/D (DFF_X1)                                0.01       1.95 r
+  data arrival time                                                  1.95
+
+  clock CLK (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  swp_v_reg[11]/CK (DFF_X1)                               0.00       2.00 r
+  library setup time                                     -0.04       1.96
+  data required time                                                 1.96
+  --------------------------------------------------------------------------
+  data required time                                                 1.96
+  data arrival time                                                 -1.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

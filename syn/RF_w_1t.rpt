@@ -1,0 +1,38 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RF_WINDOWED_NBIT32_M8_N2_F4
+Version: S-2021.06-SP4
+Date   : Thu May  4 13:27:59 2023
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: DATABUS_reg[31]
+              (rising edge-triggered flip-flop)
+  Endpoint: DATABUS[31]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RF_WINDOWED_NBIT32_M8_N2_F4
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  DATABUS_reg[31]/CK (DFF_X1)              0.00       0.00 r
+  DATABUS_reg[31]/Q (DFF_X1)               0.10       0.10 r
+  DATABUS[31] (inout)                      0.00       0.10 r
+  data arrival time                                   0.10
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
